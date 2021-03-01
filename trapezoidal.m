@@ -1,7 +1,7 @@
 clc; clear;
 upper = 10;
 lower = 3;
-x = 3:10;
+x = 0:0.5:4.5;
 y = 3*x + x.^2;
 
 %area = Trapezoidal(upper, lower, 3*x + x.^2)

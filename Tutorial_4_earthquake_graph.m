@@ -14,7 +14,7 @@ value = 1;
      end    
  end
         
-acceleration = rmmissing(new);
+acceleration = 9.81* rmmissing(new);
 plot(time,acceleration)
 xlabel("Time (ms)")
 ylabel("Acceleration")

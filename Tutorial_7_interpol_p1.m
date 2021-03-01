@@ -20,4 +20,4 @@ function y_out = linear_interpol(x_in, y_in, x_out)
         y_out(jj) = y1 + (y2-y1)/(x2-x1)*(x_out(jj)-x1);
     end
 end
-xx = "hello world"
+

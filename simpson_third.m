@@ -1,9 +1,8 @@
 clc; clear;
-upper = 10; % upper bound of integral
-lower = 0; % lower bound of integral
-func = 3*x + x.^2;
+x = 0:5; % upper bound of integral
+y = 3*x + x.^2;
 
-area = intergrate(x, y);
+area = intergrate(x, y)
 total_area =area(length(x))
 
 function trap = intergrate(x, y)
@@ -13,4 +12,3 @@ function trap = intergrate(x, y)
     end
 end
 
-%% How do i implement a lower bound to this formula? How can I call this from command window?

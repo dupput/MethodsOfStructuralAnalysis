@@ -1,8 +1,7 @@
 % example function x^2 - 2 = 0
-% pass <newton_function(@(x) x^2 -2, @(x) 2*x, 1, 50, 0.01)> in command
+root = newton_function(@(x) x^2 -2, @(x) 2*x, 1, 50, 0.01)
 % window. Check script 1, script 2
 function x = newton_function(f, df, xo, imax, xtol)
-
     % initial values
     iter = 1;
     err = xtol;
@@ -14,5 +13,4 @@ function x = newton_function(f, df, xo, imax, xtol)
         err = norm(x- xo);
         xo = x;
     end
-
 end
